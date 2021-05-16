@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Army_Hierarchy.Contracts
+﻿namespace Army_Hierarchy.Contracts
 {
-    interface IPrivate
+    public interface IPrivate : ISoldier
     {
+        public decimal Salary { get; set; }
     }
 }

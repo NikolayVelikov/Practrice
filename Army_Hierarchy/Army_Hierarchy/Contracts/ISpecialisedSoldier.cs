@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Army_Hierarchy.Enumeration;
 
 namespace Army_Hierarchy.Contracts
 {
-    interface ISpecialisedSoldier
+    public interface ISpecialisedSoldier
     {
+        public Corps Corps { get; set; }
     }
 }

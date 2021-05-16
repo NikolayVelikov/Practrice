@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Army_Hierarchy.Models;
+using System;
 
 namespace Army_Hierarchy
 {
@@ -6,7 +7,8 @@ namespace Army_Hierarchy
     {
         static void Main(string[] args)
         {
-            
+            Spy spy = new Spy(123, "asdas", "asdas", 145);
+            Console.WriteLine(spy);
         }
     }
 }

@@ -1,7 +1,8 @@
-﻿namespace Army_Hierarchy.Enumeration
+﻿namespace Army_Hierarchy.Contracts
 {
-    public enum Repair
+    public interface IRepair : ISpecialisedSoldier
     {
-
+        public string PartName { get; set; }
+        public int WorkedHours { get; set; }
     }
 }

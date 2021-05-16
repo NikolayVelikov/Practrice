@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Army_Hierarchy.Enumeration
+﻿namespace Army_Hierarchy.Enumeration
 {
-    class Corps
+    public enum Corps
     {
+        Airforces,
+        Marines
     }
 }
