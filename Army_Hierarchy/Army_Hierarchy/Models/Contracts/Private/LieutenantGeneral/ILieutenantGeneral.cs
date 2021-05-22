@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace Army_Hierarchy.Models.Contracts.Private.LieutenantGeneral
+﻿namespace Army_Hierarchy.Models.Contracts.Private.LieutenantGeneral
 {
+    using System.Collections.Generic;
+
     public interface ILieutenantGeneral : IPrivate
     {
         IReadOnlyCollection<IPrivate> Privates { get; }

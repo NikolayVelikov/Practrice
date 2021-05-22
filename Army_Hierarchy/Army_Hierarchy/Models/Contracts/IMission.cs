@@ -1,7 +1,7 @@
-﻿using Army_Hierarchy.Enumerators;
-
-namespace Army_Hierarchy.Models.Contracts
+﻿namespace Army_Hierarchy.Models.Contracts
 {
+    using Army_Hierarchy.Enumerators;
+
     public interface IMission
     {
         string CodeName { get; }

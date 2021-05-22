@@ -1,8 +1,8 @@
-﻿using System.Text;
-using Army_Hierarchy.Models.Contracts.Spy;
-
-namespace Army_Hierarchy.Models.Entities.Spy
+﻿namespace Army_Hierarchy.Models.Entities.Spy
 {
+    using System.Text;
+    using Army_Hierarchy.Models.Contracts.Spy;
+
     public class Spy : Soldier, ISpy
     {
         public Spy(string id, string firstName, string lastName, int codeNumber)

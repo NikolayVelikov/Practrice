@@ -1,7 +1,7 @@
-﻿using Army_Hierarchy.Enumerators;
-
-namespace Army_Hierarchy.Models.Contracts.Private.SpecialisedSoldier
+﻿namespace Army_Hierarchy.Models.Contracts.Private.SpecialisedSoldier
 {
+    using Army_Hierarchy.Enumerators;
+
     public interface ISpecialisedSoldier : IPrivate
     {
         Corps Corp { get; }

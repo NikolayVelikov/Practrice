@@ -1,9 +1,9 @@
-﻿using System;
-using Army_Hierarchy.Enumerators;
-using Army_Hierarchy.Models.Contracts;
-
-namespace Army_Hierarchy.Models.Entities
+﻿namespace Army_Hierarchy.Models.Entities
 {
+    using System;
+    using Army_Hierarchy.Enumerators;
+    using Army_Hierarchy.Models.Contracts;
+
     public class Mission : IMission
     {
         public Mission(string codeName, string state)

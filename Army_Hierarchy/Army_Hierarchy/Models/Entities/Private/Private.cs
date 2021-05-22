@@ -1,7 +1,7 @@
-﻿using Army_Hierarchy.Models.Contracts.Private;
-
-namespace Army_Hierarchy.Models.Entities.Private
+﻿namespace Army_Hierarchy.Models.Entities.Private
 {
+    using Army_Hierarchy.Models.Contracts.Private;
+
     public class Private : Soldier, IPrivate
     {
         public Private(string id, string firstName, string lastName, decimal salary)
