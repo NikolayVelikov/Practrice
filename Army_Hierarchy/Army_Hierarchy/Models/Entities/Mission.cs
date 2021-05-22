@@ -1,6 +1,7 @@
 ﻿namespace Army_Hierarchy.Models.Entities
 {
     using System;
+
     using Army_Hierarchy.Enumerators;
     using Army_Hierarchy.Models.Contracts;
 
