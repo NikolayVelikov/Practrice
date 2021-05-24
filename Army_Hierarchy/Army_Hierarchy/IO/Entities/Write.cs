@@ -1,4 +1,4 @@
-﻿namespace Army_Hierarchy.IO.Models
+﻿namespace Army_Hierarchy.IO.Entities
 {
     using System;
 
