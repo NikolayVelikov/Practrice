@@ -1,5 +1,6 @@
 ﻿namespace Army_Hierarchy.Models.Entities.Private.LieutenantGeneral
 {
+    using System.Text;
     using System.Linq;
     using System.Collections.Generic;
 
@@ -24,6 +25,21 @@
             {
                 this._privates.Add(@private);
             }
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine(base.ToString());
+            sb.AppendLine("Privates:");
+
+            foreach (var @private in this.Privates)
+            {
+                sb.AppendLine($" {@private.ToString()}");
+            }
+
+            return sb.ToString().TrimEnd();
         }
     }
 }

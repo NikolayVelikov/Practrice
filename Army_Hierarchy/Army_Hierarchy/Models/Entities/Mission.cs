@@ -32,5 +32,10 @@
 
             return currentState;
         }
+
+        public override string ToString()
+        {
+            return $"Code Name: {this.CodeName} State: {this.State.ToString()}";
+        }
     }
 }

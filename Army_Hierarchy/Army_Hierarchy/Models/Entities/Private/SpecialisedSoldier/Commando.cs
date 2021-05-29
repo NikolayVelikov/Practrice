@@ -1,5 +1,6 @@
 ﻿namespace Army_Hierarchy.Models.Entities.Private.SpecialisedSoldier
 {
+    using System.Text;
     using System.Linq;
     using System.Collections.Generic;
 
@@ -24,6 +25,20 @@
             {
                 this._missions.Add(mission);
             }
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine(base.ToString());
+            sb.AppendLine("Missions:");
+
+            foreach (var mission in this.Missions)
+            {
+                sb.AppendLine($" {mission.ToString()}");
+            }
+            return base.ToString();
         }
     }
 }

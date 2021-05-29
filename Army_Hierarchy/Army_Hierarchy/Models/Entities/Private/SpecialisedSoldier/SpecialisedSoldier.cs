@@ -1,6 +1,7 @@
 ﻿namespace Army_Hierarchy.Models.Entities.Private.SpecialisedSoldier
 {
     using System;
+    using System.Text;
 
     using Army_Hierarchy.Enumerators;
     using Army_Hierarchy.Models.Contracts.Private.SpecialisedSoldier;
@@ -24,6 +25,16 @@
             }
 
             return currentCorp;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine(base.ToString());
+            sb.AppendLine($"Corps: {this.Corp.ToString()}");
+
+            return sb.ToString().TrimEnd();
         }
     }
 }
