@@ -43,19 +43,22 @@
             this._soldiers.Add(spy);
         }
 
-        public void LieutenantGeneral(string id, string firstName, string lastName, decimal salary, string[] ids)
+        public void LieutenantGeneralWithOfficers(string id, string firstName, string lastName, decimal salary, string[] ids)
         {
             ILieutenantGeneral general = new LieutenantGeneral(id, firstName, lastName, salary);
-
-            if (ids.Length > 0)
-            {
+                        
                 List<IPrivate> privates = this._privates.Where(p => ids.Contains(p.Id)).ToList();
 
                 foreach (IPrivate @private in privates)
                 {
                     general.Add(@private);
-                }
-            }
+                }            
+
+            this._soldiers.Add(general);
+        }
+        public void LieutenantGeneral(string id, string firstName, string lastName, decimal salary)
+        {
+            ILieutenantGeneral general = new LieutenantGeneral(id, firstName, lastName, salary);
 
             this._soldiers.Add(general);
         }
@@ -106,6 +109,9 @@
             {
                 sb.AppendLine(soldier.ToString());
             }
+
+            return sb.ToString().TrimEnd();
         }
+
     }
 }

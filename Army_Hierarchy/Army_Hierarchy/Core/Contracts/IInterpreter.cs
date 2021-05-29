@@ -2,5 +2,10 @@
 {
     public interface IInterpreter
     {
+        void Private(string[] input);
+        void LieutenantGeneral(string[] input);
+        void Engineer(string[] input);
+        void Commando(string[] input);
+        string Print();
     }
 }

@@ -9,7 +9,8 @@
     {
         void Private(string id, string firstName, string lastName, decimal salary);
         void Spy(string id, string firstName, string lastName, int codeNumber);
-        void LieutenantGeneral(string id, string firstName, string lastName, decimal salary, string[] ids);
+        void LieutenantGeneral(string id, string firstName, string lastName, decimal salary);
+        void LieutenantGeneralWithOfficers(string id, string firstName, string lastName, decimal salary, string[] ids);
         void Engineer(string id, string firstName, string lastName, decimal salary, string corps, List<IRepair> repairs);
         void Commando(string id, string firstName, string lastName, decimal salary, string corps, List<IMission> missions);
         IRepair Repair(string partName, int workedHours);
