@@ -4,14 +4,14 @@
 
     using Army_Hierarchy.IO.Contracts;
 
-    public class Write : IWrite
+    public class Writer : IWriter
     {
         public void WriteLine(string text)
         {
             Console.WriteLine(text);
         }
 
-        void IWrite.Write(string text)
+        void IWriter.Write(string text)
         {
             Console.Write(text);
         }
