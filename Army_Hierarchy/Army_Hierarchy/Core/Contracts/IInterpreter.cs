@@ -6,6 +6,7 @@
         void LieutenantGeneral(string[] input);
         void Engineer(string[] input);
         void Commando(string[] input);
+        void Spy(string[] input);
         string Print();
     }
 }

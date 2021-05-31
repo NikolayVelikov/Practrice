@@ -109,6 +109,16 @@
             }
         }
 
+        public void Spy(string[] input)
+        {
+            string id = input[0];
+            string firstName = input[1];
+            string lastName = input[2];
+            int codeNumber = int.Parse(input[3]);
+
+            this._factory.Spy(id, firstName, lastName, codeNumber);
+        }
+
         public string Print()
         {
             return this._factory.Result();

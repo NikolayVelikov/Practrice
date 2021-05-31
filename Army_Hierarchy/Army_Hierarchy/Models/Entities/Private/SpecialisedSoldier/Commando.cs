@@ -38,7 +38,8 @@
             {
                 sb.AppendLine($" {mission.ToString()}");
             }
-            return base.ToString();
+
+            return sb.ToString().TrimEnd();
         }
     }
 }

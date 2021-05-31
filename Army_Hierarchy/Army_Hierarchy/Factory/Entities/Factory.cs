@@ -46,13 +46,24 @@
         public void LieutenantGeneralWithOfficers(string id, string firstName, string lastName, decimal salary, string[] ids)
         {
             ILieutenantGeneral general = new LieutenantGeneral(id, firstName, lastName, salary);
-                        
-                List<IPrivate> privates = this._privates.Where(p => ids.Contains(p.Id)).ToList();
 
-                foreach (IPrivate @private in privates)
+            List<IPrivate> privates = new List<IPrivate>();
+            foreach (var neededId in ids)
+            {
+                foreach (IPrivate @private in this._privates)
                 {
-                    general.Add(@private);
-                }            
+                    if (@private.Id == neededId)
+                    {
+                        privates.Add(@private);
+                        break;
+                    }
+                }
+            }        
+
+            foreach (IPrivate @private in privates)
+            {
+                general.Add(@private);
+            }
 
             this._soldiers.Add(general);
         }

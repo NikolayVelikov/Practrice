@@ -1,8 +1,8 @@
-﻿using Army_Hierarchy.Core.Entities;
-using Army_Hierarchy.IO.Entities;
-
-namespace Army_Hierarchy
+﻿namespace Army_Hierarchy
 {
+    using Army_Hierarchy.Core.Entities;
+    using Army_Hierarchy.IO.Entities;
+
     public class StartUp
     {
         static void Main(string[] args)

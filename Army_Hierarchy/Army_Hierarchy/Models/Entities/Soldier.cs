@@ -8,7 +8,7 @@
         {
             this.Id = id;
             this.FirstName = firstName;
-            this.LastName = LastName;
+            this.LastName = lastName;
         }
         public string Id { get; private set; }
 
