@@ -91,13 +91,10 @@ namespace Fidle
             var numbers = inputNumbers.Trim().Split().Select(int.Parse).ToArray();
             int numN = numbers.Count();
 
-
             int initialJump = 0;
             int next = 0;
 
             var list = new List<int>(numN);
-
-
 
             int counter = 0, max = numbers.Max();
             for (int i = 0; i < numN; i++)

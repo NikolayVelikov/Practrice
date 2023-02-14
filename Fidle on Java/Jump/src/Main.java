@@ -73,7 +73,7 @@ public class Main {
         return  result;
     }
 
-    public  static ArrayList<Integer> Slow(String inputNumbers){
+    public  static List<Integer> Slow(String inputNumbers){
         int[] numbers = CreateIntArray(inputNumbers);
         int numN = numbers.length;
 
